@@ -18,9 +18,9 @@ void classify(float* x_sample) {
   
     Serial.print("Predicted class: ");
     if (classifier.predict(x_sample) == 0)
-       sentUtf8(bicep);
+       sentUtf8(punch);
     else
-      sentUtf8(punch);
+      sentUtf8(bicep);
     //Serial.println(classifier.predictLabel(x_sample));
 }
 
